@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TradeNew</title>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body{background: #212537;color:#fff;}
+	</style>
+  </head>
+
+  <body>
+    <!-- 
+<p><%#= @huobi_json %></p> -->
+<!-- <p>BTC: <%#= @gate_price %></p> -->
+<p></p>
+<style type="text/css">
+	.bb{border: 0.1px solid red;}
+	#table th,#table td, .market1, .market2{border:currentColor;background: #333747;vertical-align:middle;}
+	th,td{
+		height:40px;
+		font-size: 11px;
+	}
+	/*th{color:#949494;font-size: 12px;}*/
+	#table tr{margin-bottom: 1px;}
+	.right-block {
+	    display: block;
+	    margin-right: 0;
+	    margin-left: auto;
+	}
+	.fs18{font-size: 18px;}
+	.fs12,th{font-size: 12px;color:#949494;}
+	.market1{
+		margin-right: -5px;
+	}
+	.market2{
+		margin-left: 5px;
+	}
+	.market1,.market2{padding: 8px;}
+	.trade-logo{display: inline-block;}
+	.bot{position:relative;top: 4px;}
+</style>
+<div class="container-fluid" style="height:88px;">
+	<div class="rwo">
+		<div class="col-sm-6 col-xs-6" style="padding:0 5px 0 0">
+			<div class=" market1">
+				<div class="" style="">
+					<img src="http://wotoken.store/huobi.png" class="img-responsive trade-logo" width="20px"> <span class="fs12 bot">Huobi</span>
+				</div>
+				<div class="text-center fs18" id="gate_btc">
+					3819.47
+				</div>
+				<div class="text-center fs12">
+					BTC/USDT
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="col-sm-6 col-xs-6" style="padding:0 0 0 5px;">
+			<div class=" market2">
+				<div class="" style="">
+					<img src="http://wotoken.store/gate.png" class="img-responsive right-block trade-logo" width="20px"> <span class="fs12 bot">Gate</span>
+				</div>
+				<div class="text-center fs18">
+					3819.47
+				</div>
+				<div class="text-center fs12">
+					BTC/USDT
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+
+<div class="container-fluid">
+	<table class="table" id="table" cellpadding="10" style="border-collapse:separate; border-spacing:0px 1px;">
+		<tr>
+			<th>Type</th>
+			<th>Market</th>
+			<th>Price</th>
+			<th>Num</th>
+			<th>Earn</th>
+			<th>Balance</th>
+		</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+	</table>
+	
+</div>
+
+<div class="container-fluid" style="height:88px;">
+	<div class="rwo">
+		<div class="col-sm-6 col-xs-6" style="padding:0 5px 0 0">
+			<div class=" market1">
+				<div class="" style="">
+					<img src="http://wotoken.store/huobi.png" class="img-responsive trade-logo" width="20px"> <span class="fs12 bot">Huobi</span>
+				</div>
+				<div class="text-center fs18">
+					3819.47
+				</div>
+				<div class="text-center fs12">
+					ETH/USDT
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="col-sm-6 col-xs-6" style="padding:0 0 0 5px;">
+			<div class=" market2">
+				<div class="" style="">
+					<img src="http://wotoken.store/gate.png" class="img-responsive right-block trade-logo" width="20px"> <span class="fs12 bot">Gate</span>
+				</div>
+				<div class="text-center fs18">
+					3819.47
+				</div>
+				<div class="text-center fs12">
+					ETH/USDT
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+
+<div class="container-fluid">
+	<table class="table" id="table" cellpadding="10" style="border-collapse:separate; border-spacing:0px 1px;">
+		<tr>
+			<th>Type</th>
+			<th>Market</th>
+			<th>Price</th>
+			<th>Num</th>
+			<th>Earn</th>
+			<th>Balance</th>
+		</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+			<tr>
+				<td>sell</td>
+				<td>Huobi</td>
+				<td>3810.34</td>
+				<td>3.45</td>
+				<td>0.51</td>
+				<td>33.78</td>
+			</tr>
+	</table>
+	
+</div>
+
+  </body>
+</html>

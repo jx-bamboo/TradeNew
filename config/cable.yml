@@ -1,0 +1,32 @@
+# development:
+#   adapter: async
+
+# test:
+#   adapter: async
+
+# production:
+#   adapter: redis
+#   url: redis://localhost:6379/1
+#   channel_prefix: TradeNew_production
+
+development:
+  adapter: redis
+  url: redis://:bobao2016@127.0.0.1:6379/13
+  channel_prefix: trade_new_development
+
+staging:
+  adapter: redis
+  url: redis://:bobao2016@api-dev.688ex.com:6379/13
+  channel_prefix: trade_new_staging
+
+
+test:
+  adapter: redis
+  url: redis://:bobao2016@127.0.0.1:6379/13
+  channel_prefix: trade_new_test
+
+
+production:
+  adapter: redis
+  url: redis://:bobao2016@127.0.0.1:6379/13
+  channel_prefix: trade_new_production

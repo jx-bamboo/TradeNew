@@ -1,0 +1,26 @@
+defaults: &defaults
+  sidekiq:
+    name_space: trade_new
+development:
+  <<: *defaults
+  site_url: http://localhost:3000
+  sidekiq:
+    name_space: trade_new_dev
+
+staging:
+  <<: *defaults
+  site_url: http://localhost:3000
+  sidekiq:
+    name_space: trade_new_stag
+
+test:
+  <<: *defaults
+  site_url: http://localhost:3000
+  sidekiq:
+    name_space: trade_new_test
+
+production:
+  <<: *defaults
+  site_url: http://localhost:3000
+  sidekiq:
+    name_space: trade_new_prod

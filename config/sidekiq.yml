@@ -1,0 +1,15 @@
+:pidfile: tmp/pids/sidekiq.pid
+:logfile: log/sidekiq.log
+:concurrency: 5
+:queues:
+  - [hard_worker, 1]
+staging:
+  :pidfile: tmp/pids/sidekiq_staging.pid
+  :logfile: log/sidekiq_staging.log
+  :concurrency: 5
+  :daemon: true
+production:
+  :pidfile: tmp/pids/sidekiq_production.pid
+  :logfile: log/sidekiq_production.log
+  :concurrency: 5
+  :daemon: true

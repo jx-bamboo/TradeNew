@@ -1,0 +1,154 @@
+<!--  -->
+<p></p>
+<style type="text/css">
+	.bb{border: 0.1px solid red;}
+	#table th,#table td, .market1, .market2{border:currentColor;background: #333747;vertical-align:middle;}
+	th,td{
+		height:40px;
+		font-size: 11px;
+	}
+	/*th{color:#949494;font-size: 12px;}*/
+	#table tr{margin-bottom: 1px;}
+	.right-block {
+	    display: block;
+	    margin-right: 0;
+	    margin-left: auto;
+	}
+	.fs18{font-size: 18px;}
+	.fs12,th{font-size: 12px;color:#949494;}
+	.market1{
+		margin-right: -5px;
+	}
+	.market2{
+		margin-left: 5px;
+	}
+	.market1,.market2{padding: 8px;}
+	.trade-logo{display: inline-block;}
+	.bot{position:relative;top: 4px;}
+</style>
+<div style="height:88px;">
+	<div class="rwo">
+		<div class="col-sm-6 col-xs-6" style="padding:0 5px 0 0">
+			<div class=" market1">
+				<div class="" style="">
+					<%= image_tag("huobi.png", class: "img-responsive trade-logo", width: "20px") %> <span class="fs12 bot">Huobi</span>
+				</div>
+				<div class="text-center fs18">
+					<%= @huobi_btc_price %>
+				</div>
+				<div class="text-center fs12">
+					BTC/USDT
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="col-sm-6 col-xs-6" style="padding:0 0 0 5px;">
+			<div class=" market2">
+				<div class="" style="">
+					<%= image_tag("gate.png", class: "img-responsive right-block trade-logo", width: "20px") %> <span class="fs12 bot">Gate</span>
+				</div>
+				<div class="text-center fs18">
+					<%= @gate_btc_price %>
+				</div>
+				<div class="text-center fs12">
+					BTC/USDT
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+
+<div>
+	<table class="table btc_table" id="table" cellpadding="10" style="border-collapse:separate; border-spacing:0px 1px;">
+		<tr>
+			<th>Type</th>
+			<th>Market</th>
+			<th>Price</th>
+			<th>Num</th>
+			<th>Earn</th>
+			<!-- <th>Balance</th> -->
+		</tr>
+		<tbody class="btc_tbody">
+			<% if @btcusdt.present? %>
+				<% @btcusdt.each do |btc| %>
+				<tr>
+					<td><%= get_type(btc.types) %></td>
+					<td><%= get_market(btc.market) %></td>
+					<td><%= btc.price %></td>
+					<td><%= btc.number %></td>
+					<td><%= btc.earn %></td>
+					<!-- <td>33.78</td> -->
+				</tr>
+				<% end %>
+			<% end %>
+		</tbody>
+	</table>
+	
+</div>
+
+<div style="height:88px;">
+	<div class="rwo">
+		<div class="col-sm-6 col-xs-6" style="padding:0 5px 0 0">
+			<div class=" market1">
+				<div class="" style="">
+					<%= image_tag("huobi.png", class: "img-responsive trade-logo", width: "20px") %> <span class="fs12 bot">Huobi</span>
+				</div>
+				<div class="text-center fs18">
+					<%= @huobi_eth_price %>
+				</div>
+				<div class="text-center fs12">
+					ETH/USDT
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="col-sm-6 col-xs-6" style="padding:0 0 0 5px;">
+			<div class=" market2">
+				<div class="" style="">
+					<%= image_tag("gate.png", class: "img-responsive right-block trade-logo", width: "20px") %> <span class="fs12 bot">Gate</span>
+				</div>
+				<div class="text-center fs18">
+					<%= @gate_eth_price %>
+				</div>
+				<div class="text-center fs12">
+					ETH/USDT
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+
+<div>
+	<table class="table eth_table" id="table" cellpadding="10" style="border-collapse:separate; border-spacing:0px 1px;">
+		<tr>
+			<th>Type</th>
+			<th>Market</th>
+			<th>Price</th>
+			<th>Num</th>
+			<th>Earn</th>
+			<!-- <th>Balance</th> -->
+		</tr>
+		<tbody class="eth_tbody">
+			<% if @ethusdt.present? %>
+			<% @ethusdt.each do |eth| %>
+				<tr>
+					<td><%= get_type(eth.types) %></td>
+					<td><%= get_market(eth.market) %></td>
+					<td><%= eth.price %></td>
+					<td><%= eth.number %></td>
+					<td><%= eth.earn %></td>
+					<!-- <td>33.78</td> -->
+				</tr>
+			<% end %>
+		<% end %>
+		</tbody>
+		
+	</table>
+	
+</div>

@@ -1,0 +1,8 @@
+hard_worker_job:
+  description: "get rake every 1 min"
+  cron: "*/1 * * * * *"
+  class: "HardWorkerJob"
+  queue: hard_worker
+  active_job: true
+  args:
+    hard: "stuff"

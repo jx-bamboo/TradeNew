@@ -1,0 +1,16 @@
+defaults: &defaults
+  host:     127.0.0.1
+  port:     6379
+  password: bobao2016
+
+development:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
